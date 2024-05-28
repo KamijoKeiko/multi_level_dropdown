@@ -1,11 +1,19 @@
-import {NormalData} from "./NormalData.tsx";
-
+import { Container } from '@mui/material';
+import {Apply} from "./Apply.tsx";
 
 export const App = () => {
-    return (
-        <div>
-            <h1>App</h1>
-            <NormalData/>
-        </div>
-    )
-}
+  return (
+    <Container
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }}
+    >
+      <h2>USB機器情報</h2>
+      <Apply/>
+    </Container>
+  );
+};
